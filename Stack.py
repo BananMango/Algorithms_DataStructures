@@ -2,10 +2,12 @@
 
 class Stack:
     "Array stack implementation"
-    def __init__(self):
+    def __init__(self): 
+        "creates an empty Stack"
         self._data = []
 
     def __len__(self):
+        "returns lenght of a Stack
         return len(self._data)
 
     def is_empty(self):
@@ -27,3 +29,5 @@ class Stack:
         if self.is_empty():
             raise Exception('Stack is empty')
         return self._data.pop()
+
+    
