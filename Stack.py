@@ -27,7 +27,3 @@ class Stack:
         if self.is_empty():
             raise Exception('Stack is empty')
         return self._data.pop()
-
-
-
-
