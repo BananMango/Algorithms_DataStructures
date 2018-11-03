@@ -1,6 +1,6 @@
 "A stack is a collection of objects that are inserted and removed according to the last-in, first-out (LIFO) principle."
 
-class Stack:
+class ArrayStack:
     "Array stack implementation"
     def __init__(self): 
         "creates an empty Stack"
