@@ -1,4 +1,4 @@
-# Algorithms_DataStructures
+# Data Structures
 **Python** is a dynamically typed language, as there is no advance declaration associating an identifier with a particular data type. Built-in classes can be divided into mutable and immutable(A class is immutable if each object of that class has a fixed value upon instantiation that cannot subsequently be changed). Mutable classes are: list, set, dict; And immutable: bool, int, float, tuple, str.
 
 * **Bool** class is used to manipulate logic values, and the only two instances of that class are expressed as the literals True and False (default constructor bool(), returns False)
@@ -28,3 +28,7 @@ ________________________________________________________________________________
 
 * **Stack**: implemented using Python list with space usage of O(n) and running time of all operations of O(1)
 
+______________________________________________________________________________________________________________________________
+# Sorting Algorithms
+
+* **Insertion sort**: the algorithm proceeds as follows for an array- based sequence. We start with the first element in the array. One element by itself is already sorted. Then we consider the next element in the array. If it is smaller than the first, we swap them. Next we consider the third element in the array. We swap it leftward until it is in its proper order with the first two elements. We then consider the fourth element, and swap it leftward until it is in the proper order with the first three. We continue in this manner with the fifth element, the sixth, and so on, until the whole array is sorted. 
