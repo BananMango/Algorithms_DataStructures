@@ -11,7 +11,15 @@
 * **Dict** class represents a dictionary, or mapping, from a set of distinct keys to associated values.
 ______________________________________________________________________________________________________________________________
 * **Array** is a low-level concept of various “sequence” classes, namely the built-in list, tuple, and str classes. There is significant commonality between these classes, most notably: each supports indexing to access an individual element of a sequence, using a syntax such as seq[k]
-  * Although a list has a particular length when constructed, the class allows us to add elements to the list, with no    apparent limit on the overall capacity of the list. To provide this abstraction, Python relies on an algorithmic sleight of hand known as a dynamic array.
+  * Although a list has a particular length when constructed, the class allows us to add elements to the list, with no               
+  apparent limit on the overall capacity of the list. To provide this abstraction, Python relies on an algorithmic sleight of 
+  hand known as a **dynamic array**.
+  __Implementation of dynamic array__
+  1.Allocate a new array B with larger capacity.
+  2. Set B[i] = A[i], for i = 0,...,n−1, where n denotes current number of items. 
+  3. Set A = B, that is, we henceforth use B as the array supporting the list.
+  4. Insert the new element in the new array.
+
 
 
 * **Stack**: implemented using Python list with space usage of O(n) and running time of all operations of O(1)
