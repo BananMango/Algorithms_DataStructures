@@ -11,8 +11,10 @@ class DynamicArray:
         return self._n
 
     def __getitem__(self, k):
-        if k < 0 and k > self._n:
+        if k > self._n:
             raise IndexError
+        if k < 0:
+            return self._A[self._n+k]
         return self._A[k]
 
     def append(self, item):
