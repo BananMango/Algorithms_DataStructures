@@ -14,7 +14,7 @@ ________________________________________________________________________________
   * Although a list has a particular length when constructed, the class allows us to add elements to the list, with no               
   apparent limit on the overall capacity of the list. To provide this abstraction, Python relies on an algorithmic sleight of 
   hand known as a **dynamic array**.
-       - *Implementation of dynamic array*
+       - **Implementation of dynamic array**
        
            1.Allocate a new array B with larger capacity.
            
