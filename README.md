@@ -17,8 +17,11 @@ ________________________________________________________________________________
        - *Implementation of dynamic array*
        
            1.Allocate a new array B with larger capacity.
+           
            2.Set B[i] = A[i], for i = 0,...,n−1, where n denotes current number of items. 
+           
            3.Set A = B, that is, we henceforth use B as the array supporting the list.
+           
            4.Insert the new element in the new array.
 
 
