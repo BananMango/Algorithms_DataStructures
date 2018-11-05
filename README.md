@@ -9,6 +9,10 @@
 * **Str** class is third sequence class in Python that is designed to efficiently represent an immutable sequence of characters.
 * **Set** class represents the mathematical notion of a set, namely a collection of elements, without duplicates, and without an inherent order to those elements. The major advantage of using a set, as opposed to a list, is that it has a highly optimized method for checking whether a specific element is contained in the set.This is based on a data structure known as a hash table. However, there are two important restrictions due to the algorithmic underpinnings. The first is that the set does not maintain the elements in any particular order. The second is that only instances of immutable types can be added to a Python set. **Frozenset** class is an immutable form of the set type, so it is legal to have a set of frozensets.
 * **Dict** class represents a dictionary, or mapping, from a set of distinct keys to associated values.
+______________________________________________________________________________________________________________________________
+* **Array** is a low-level concept of various “sequence” classes, namely the built-in list, tuple, and str classes. There is significant commonality between these classes, most notably: each supports indexing to access an individual element of a sequence, using a syntax such as seq[k]
+  * Although a list has a particular length when constructed, the class allows us to add elements to the list, with no    apparent limit on the overall capacity of the list. To provide this abstraction, Python relies on an algorithmic sleight of hand known as a dynamic array.
+
 
 * **Stack**: implemented using Python list with space usage of O(n) and running time of all operations of O(1)
 
