@@ -27,11 +27,11 @@ ________________________________________________________________________________
 
 
 * **Stack**: a collection of objects that are inserted and removed according to the last-in, first-out (LIFO) principle. Formally, a stack is an abstract data type (ADT) such that an instance S supports the following methods:
- - .push(item): Add element item to the top of stack.
- - .pop(): Remove and return the top element from the stack; an error occurs if the stack is empty.
- - .top(): Return a reference to the top element of stack, without removing it; an error occurs if the stack is empty.
- - .is_empty(): Return True if stack does not contain any elements.
- - len(Stack): Return the number of elements in stack.
+    - .push(item): Add element item to the top of stack.
+    - .pop(): Remove and return the top element from the stack; an error occurs if the stack is empty.
+    - .top(): Return a reference to the top element of stack, without removing it; an error occurs if the stack is empty.
+    - .is_empty(): Return True if stack does not contain any elements.
+    - len(Stack): Return the number of elements in stack.
 
 ______________________________________________________________________________________________________________________________
 # Sorting Algorithms
