@@ -32,6 +32,13 @@ ________________________________________________________________________________
     - .top(): Return a reference to the top element of stack, without removing it; an error occurs if the stack is empty.
     - .is_empty(): Return True if stack does not contain any elements.
     - len(Stack): Return the number of elements in stack.
+* **Queue**: a collection of objects that are inserted and removed according to the first-in, first-out (FIFO) principle.That is, elements can be inserted at any time, but only the element that has been in the queue the longest can be next removed.
+Supports the following fundamental methods for a queue Q:
+    - .enqueue(item): Add element e to the back of queue 
+    - .dequeue(): Remove and return the first element from queue Q; an error occurs if the queue is empty.
+    - .first(): Return a reference to the element at the front of queue, without removing it; an error occurs if the queue is empty.
+    - .is_empty( ): Return True if queue does not contain any elements.
+    - len(Q): Return the number of elements in queue ;
 
 ______________________________________________________________________________________________________________________________
 # Sorting Algorithms
