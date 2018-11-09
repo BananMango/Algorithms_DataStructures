@@ -39,7 +39,7 @@ Supports the following fundamental methods for a queue Q:
     - .first(): Return a reference to the element at the front of queue, without removing it; an error occurs if the queue is empty.
     - .is_empty( ): Return True if queue does not contain any elements.
     - len(Q): Return the number of elements in queue ;
-
+* **Deque (double-ended queue)**: queue-like data structure that supports insertion and deletion at both the front and the back of the queue.
 ______________________________________________________________________________________________________________________________
 # Sorting Algorithms
 
