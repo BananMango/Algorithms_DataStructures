@@ -24,7 +24,7 @@ ________________________________________________________________________________
            
            4.Insert the new element in the new array.
 
-
+* **Linked List** is a collection of nodes that collectively form a linear sequence. Each node stores a reference to an object that is an element of the sequence, as well as a reference to the next node of the list. The first and last node of a linked list are known as the head and tail of the list, respectively. By starting at the head, and moving from one node to another by following each node’s next reference, we can reach the tail of the list. 
 
 * **Stack**: a collection of objects that are inserted and removed according to the last-in, first-out (LIFO) principle. Formally, a stack is an abstract data type (ADT) such that an instance S supports the following methods:
     - .push(item): Add element item to the top of stack.
