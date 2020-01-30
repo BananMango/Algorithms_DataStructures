@@ -1,3 +1,4 @@
+# https://www.e-olymp.com/ru/contests/15266/problems/155830
 def min_value(t, a, b, c, n):
 	t[1] = a[1]
 	t[2] = min(a[1] + a[2], b[1])
