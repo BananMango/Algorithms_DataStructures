@@ -10,7 +10,7 @@ def min_value(t, a, b, c, n):
 	return t[n]
 
 def read_values(n):
-	a, b, c = [0] * (n+1), [0] * (n+1), [0] * (n+1)
+	a, b, c = [0] * (5001), [0] * (5001), [0] * (5001)
 	for i in range(1, n+1):
 		a_i, b_i, c_i = map(int, input().split())
 		a[i], b[i], c[i] = a_i, b_i, c_i
@@ -18,6 +18,6 @@ def read_values(n):
 
 if __name__ == '__main__':
 	n = int(input())
-	t = [0] * (n + 1)
+	t = [0] * (5001)
 	a, b, c = read_values(n)
 	print(min_value(t, a, b, c, n))
