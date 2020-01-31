@@ -1,3 +1,4 @@
+# https://www.e-olymp.com/ru/contests/15320/problems/156538
 def inverse_tree(direct, center):
     global result
     root = direct[0]
