@@ -16,6 +16,20 @@ def power_simple(a, n):
         n = n // 2
     return res
 
+def power_simple2(a, n):
+    negative_power = False
+    if n < 0:
+        n *= -1
+        negative_power = True
+	res = 1
+    while(n != 0):
+		if (n % 2 == 1):
+			res *= x
+		x *= x
+        n = n // 2
+	if negative_power:
+		return 1 / res
+	return res
     
 if __name__ == '__main__':
     n = 13
