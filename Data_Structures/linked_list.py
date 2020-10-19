@@ -1,62 +1,85 @@
 class Node:
-    def __init__(self, val):
-				self.next = None
+    def __init__(self,val, next=None):
         self.val = val
-				
-				
-class LinkedList:
-    def __init__(self):
-        self.head = None
+        self.next = next
+        
+class MyLinkedList:
+
+    def __init__(self,head=None):
+        """
+        Initialize your data structure here.
+        """
+        self.head=head
         self.size = 0
-    
-    def get(self, idx):
-        if idx > self.size:
+
+    def get(self, index):
+        if index >= self.size:
             return -1
-        curr = self.head
-        for i in range(idx - 1):
+        else:
+            curr = self.head
+            curr_idx = 0
+        while curr_idx in range (0,self.size):
+            if curr_idx == index:
+                return curr.val
             curr = curr.next
-        return curr.val
-    
+            curr_idx += 1
+
     def addAtHead(self, val):
         node = Node(val)
-        if self.head is None:
-            self.head = node
-            self.size += 1
-        else:
-            node.next = self.head
-            self.head = node
-            self.size += 1
-        
-    def addAtTail(self, val):
+        node.next = self.head
+        self.head = node
+        self.size += 1
+        return 
+    
+    def addAtTail(self, val):     
         curr = self.head
+        if not self.head:
+            self.head = Node(val)
+            self.size += 1
+            return 
         while curr.next is not None:
             curr = curr.next
-        node = Node(val)
-        curr.next = node
+        curr.next = Node(val)
         self.size += 1
-        
-    def addAtIndex(self, val, idx):
-        if idx > self.size:
+        return
+    
+    def addAtIndex(self, index, val):
+        if index == 0:
+            self.addAtHead(val)
+        elif index > self.size:
             return
-        else:
+        elif index <= self.size:
+            prev = self.head
             curr = self.head
-            for i in range(idx - 1):
-                curr = curr.next
-            
-            node = Node(val)
-            curr_next = curr.next
-            curr.next = node
-            node.next = curr_next
-            self.size += 1
-        
-    def deleteAtIndex(self, idx):
-        if idx > self.size:
+            i = 0
+            while i in range(0, self.size+1):      
+                if i == index:
+                    node = Node(val)
+                    prev.next = node
+                    node.next = curr
+                    self.size += 1
+                    return
+                else:
+                    i += 1
+                    prev = curr
+                    curr = curr.next
             return
-        else:
-            curr = self.head
-            for i in range(idx - 1):
-                curr = curr.next
-            
-            curr_next = curr.next
-            curr.next = curr_next.next
-            self.size -= 1
+        
+    def deleteAtIndex(self, index):
+        curr_idx = 0
+        curr = self.head
+        last = self.head
+        
+        if index >= self.size:
+            return             
+        if index == 0:
+            self.head = curr.next
+        while curr_idx in range (0, self.size):         
+            if curr_idx == index:
+                last.next = curr.next
+                self.size -= 1
+                return
+            curr_idx += 1
+            last = curr
+            curr = curr.next
+        return
